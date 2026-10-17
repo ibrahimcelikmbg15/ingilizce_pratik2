@@ -46,6 +46,25 @@ haftalik_linkler = {
             "https://wordwall.net/resource/61665886?wwmethod=link",
             "https://wordwall.net/resource/10551041?wwmethod=link"
         ]
+    },
+    "5": {
+        "youtube": [
+            "https://www.youtube.com/watch?v=euUTFiZt4Zc",
+            "https://www.youtube.com/watch?v=41cJ0mqWses",
+            "https://www.youtube.com/watch?v=cMHUai_TkfE",
+            "https://www.youtube.com/watch?v=krpkQhdkyKw",
+            "https://www.youtube.com/watch?v=EzQ6Ag16rJk",
+            "https://www.youtube.com/watch?v=Ke7j1jFLxbc"
+        ],
+        "wordwall": [
+            "https://wordwall.net/resource/60655731?wwmethod=link",
+            "https://wordwall.net/resource/975047?wwmethod=link",
+            "https://wordwall.net/resource/53917804?wwmethod=link",
+            "https://wordwall.net/resource/36645939?wwmethod=link",
+            "https://wordwall.net/resource/120171163?wwmethod=link",
+            "https://wordwall.net/resource/97905340?wwmethod=link",
+            "https://wordwall.net/resource/91126186?wwmethod=link"
+        ]
     }
 }
 
@@ -54,11 +73,11 @@ st.set_page_config(page_title="İngilizce Ödev Linkleri", page_icon="📚", lay
 
 # Havalı Başlık ve Açıklama
 st.markdown("<h1 style='text-align: center; color: #4B0082;'>🌟 İngilizce Eğlence ve Çalışma Merkezi 🌟</h1>", unsafe_allow_html=True)
-st.markdown("<h4 style='text-align: center; color: #333333;'>Hoş geldiniz! Burası, 4. Sınıf İngilizce yolculuğumuzun haftalık durağı. İstediğiniz haftayı seçin ve pratik yapmaya hemen başlayın!</h4>", unsafe_allow_html=True)
+st.markdown("<h4 style='text-align: center; color: #333333;'>Bu program, Bahçeşehir 4. Sınıf İngilizce dersinde ödev olarak verilen oyun ve videoların linklerini derlemektedir.<br>Amacı, bu oyun ve videolara telefonunuzdan kolayca erişip yolculukta ya da bilgisayar olmadığı zamanlarda çocuklara pratik ve tekrar yaptırmaktır. Yeni konular geldikçe (en az iki haftada bir) listemiz güncellenecektir!</h4>", unsafe_allow_html=True)
 st.markdown("---")
 
-# Hafta Seçimi
-secim = st.selectbox("Lütfen çalışmak istediğiniz haftayı seçin:", ["1", "2", "3", "4"])
+# Hafta Seçimi (5. hafta eklendi)
+secim = st.selectbox("Lütfen çalışmak istediğiniz haftayı seçin:", ["1", "2", "3", "4", "5"])
 st.markdown("---")
 
 # Videolar ve Oyunları 2 Sütuna Ayırma
@@ -79,4 +98,4 @@ with col2:
 st.markdown("---")
 
 # Sistem Mimarı İmzası
-st.markdown("<p style='text-align: right; font-style: italic; color: gray; font-size: 14px;'>Sistem Mimarı: Doç. Dr. İbrahim ÇELİK</p>", unsafe_allow_html=True)
+st.markdown("<h3 style='text-align: right; font-style: italic; color: #2E86C1; text-shadow: 1px 1px 2px #aaa;'>Sistem Mimarı: Doç. Dr. İbrahim ÇELİK</h3>", unsafe_allow_html=True)
